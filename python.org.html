@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Vendosim ikonen e python si favicon-->
+    <link rel="icon" type="image/png" href="python.png">
+    <!--Vendosim emrin e faqes-->
+    <title>Welcome to Python.org</title>
+    <!--Perdorim internal css-->
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+/*Krijojme nje klase per headerin e faqes*/
+header {
+    background-color: #00146d;
+    padding: 20px 0;
+}
+/*Krijojme nje klase per navigation bar qe ndodhet ne header*/
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+/*Krijojme nje nenklase ose subclass per elementet e navigation bar qe ndodhen ne header*/
+header nav ul li {
+    margin: 0 15px;
+}
+/*Krijojme nje tjeter subclass vetem per elementet qe ndodhen ne navigation bar*/
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*Krijojme nje klase per permbajtjen e faqes*/
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+    background-color: #281f81;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.img{
+    position: fixed;
+    top: 0;
+    right: 0 ;
+    width: 100;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro-text h1 {
+    margin: 0;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.feature {
+    width: 22%;
+    background-color: #ebebeb;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-events {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news, .events {
+    width: 48%;
+}
+
+.news ul, .events ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news ul li, .events ul li {
+    margin: 10px 0;
+}
+
+.success-stories {
+    background-color: #fff3c4;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #999999;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+/*Krijojme nje klase per pjesen fundore te faqes ose footer*/
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    /*Stilojme footerin duke krijuar nje nenklase per te aksesuar vetem elementet qe bejne pjese aty*/
+}
+    </style>
+  </head>
+  <!--Krijojme contentin apo permbajtjen e faqes-->
+  <body>
+    <!--Krijojme headerin e faqes-->
+    <header>
+      <nav>
+        <!--Tagu nav sherben per te krijuar nje navigation bar-->
+          <ul>
+            <!--Tagu ul perdoret per te krijuar nje liste te pa renditur(unordered list)-->
+              <li><a href="#">Python</a></li>
+              <li><a href="#">PSF</a></li>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">PyPI</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Community</a></li>
+          </ul>
+      </nav>
+      <div class="img">
+        <img src="python.png" width="50">
+      </div>
+  </header>
+  <!--Krijojme pjesen kryesore te faqes ose main content-->
+  <main>
+        <section class="intro">
+            <div class="intro-text">
+                <h1>Python</h1>
+                <p>Python is a programming language that lets you work quickly and integrate systems more effectively.</p>
+                <a href="#">Learn More</a>
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search"><button type="submit">Socialize</button>
+                    <button type="submit">Donate</button>
+                    <button type="button">Go</button>
+                  </form>
+                </div>
+                <img src="python.png" width="30px">
+
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <h2>Get Started</h2>
+                <p>Whether you're new to programming or an experienced developer, it's easy to learn and use Python.</p>
+                <a href="#">Start with our Beginner's Guide</a>
+            </div>
+            <div class="feature">
+                <h2>Download</h2>
+                <p>Python source code and installers are available for download for all versions!</p>
+                <a href="#">Latest: Python 3.12.3</a>
+            </div>
+            <div class="feature">
+                <h2>Docs</h2>
+                <p>Documentation for Python's standard library, along with tutorials and guides, are available online.</p>
+                <a href="#">docs.python.org</a>
+            </div>
+            <div class="feature">
+                <h2>Jobs</h2>
+                <p>Looking for work or have a Python related position that you're trying to hire for?</p>
+                <a href="#">jobs.python.org</a>
+            </div>
+        </section>
+        <section class="news-events">
+            <div class="news">
+                <h2>Latest News</h2>
+                <ul>
+                    <li><a href="#">Python 3.13.0 beta 1 released</a></li>
+                    <li><a href="#">PSF Grants Program 2022 & 2023 Transparency Report</a></li>
+                    <li><a href="#">PSF Board Election Dates for 2024</a></li>
+                    <li><a href="#">The PSF's 2023 Annual Impact Report is here!</a></li>
+                </ul>
+            </div>
+            <div class="events">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li><a href="#">PyCon Italia 2024</a></li>
+                    <li><a href="#">GeoPython 2024</a></li>
+                    <li><a href="#">csv,conf,v8</a></li>
+                    <li><a href="#">PyLadies Amsterdam: NLP projects with spaCy</a></li>
+                    <li><a href="#">Building Python Communities Yaounde</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="success-stories">
+            <h2>Success Stories</h2>
+            <p>Python's convenience has made it the most popular language for machine learning and artificial intelligence. Python's flexibility has allowed Anyscale to make ML/AI scalable from laptops to clusters.</p>
+            <a href="#">Python provides convenience and flexibility for scalable ML/AI</a>
+        </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+          <p>The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers.</p>
+          <a href="#">Become a Member</a>
+          <a href="#">Donate to the PSF</a>
+      </div>
+      <div class="footer-content">
+        <h4>Use Python for:</h4>
+        <ul>
+          <li><h5><strong> Development</strong></h5></li>
+          <li><h5><strong>GUI Development</strong></h5></li>
+          <li><h5><strong>Scientific and numeric</strong></h5></li>
+          <li><h5><strong>Software Development</strong></h5></li>
+          <li><h5><strong>System Administration</strong></h5></li>
+        </ul>
+      </div>
+  </footer>
+
+  </body>
+</html>
+
+
+
+
+
+
+
